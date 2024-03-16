@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<style>
+    table, th, td {
+        border: 1px solid black;
+    }
+</style>
+<body>
+
+<h2>User data in Student</h2>
+
+<table style="width:100%">
+
+    {% for data in dataset %}
+
+        <tr>
+            <th>{{ data.name }}</th>
+        </tr>
+        <tr>
+            <td>{{ data.address }}</td>
+        </tr>
+        <tr>
+            <td>{{ data.age }}</td>
+
+        </tr>
+    {% endfor %}
+        
+</table>
+
+
+</body>
+</html>
+
