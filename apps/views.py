@@ -13,5 +13,5 @@ def about(request):
 
 def index(request):
     data = {}
-    data["dataset"] = Person.objects.all()
+    data["users"] = Person.objects.all()
     return render(request, 'index.html', data)
